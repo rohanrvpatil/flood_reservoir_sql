@@ -1,7 +1,10 @@
 import pandas as pd
 import mysql.connector
 
-load_dotenv(path="../.env")
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 db_config = {
     'user': os.getenv('DB_USER'),

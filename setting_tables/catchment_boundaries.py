@@ -1,8 +1,10 @@
-import os
 import geopandas as gpd
 import mysql.connector
 
-load_dotenv(path="../.env")
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 db_config = {
     'user': os.getenv('DB_USER'),
